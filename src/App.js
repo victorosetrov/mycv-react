@@ -1,37 +1,39 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import './styles/App.css'; // If you have a general stylesheet
 
 // Import your components
 import Header from './components/header/Header'; // Adjust if you have a specific file for Header
 import Footer from './components/footer/Footer';
-import Navigation from './components/navigation/Navigation';
 import HomeSection from './components/sections/HomeSection';
+import ProfessionalTitle from './components/sections/ProfessionalTitle';
 import AboutSection from './components/sections/AboutSection';
 import ContactSection from './components/sections/ContactSection';
-import './styles/App.css'; // If you have a general stylesheet
-
+import EducationSection from './components/sections/EducationSection';
+import TestimonialSection from './components/sections/TestimonialSection';
+import MyjourneySection from './components/sections/MyjourneySection';
+import WorkExperienceSection from './components/sections/WorkExperienceSection';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Navigation />
-
-        <Routes>
-          <Route path="/" element={<HomeSection />} />
-          <Route path="/about" element={<AboutSection />} />
-          <Route path="/contact" element={<ContactSection />} />
-          {/* Add more <Route> for other sections as needed */}
-        </Routes>
-
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <Header />
+      
+      {/* Main Page Content */}
+      <main>
+        {/* <HomeSection /> */}
+        <ProfessionalTitle />
+        <EducationSection />
+        <TestimonialSection />
+        <MyjourneySection />
+        <WorkExperienceSection />
+        {/* <AboutSection />
+        <ContactSection /> */}
+        {/* Add more sections as needed */}
+      </main>
+      
+      <Footer />
+    </div>
   );
 }
 
 export default App;
-
-

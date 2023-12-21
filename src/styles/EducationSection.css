@@ -1,0 +1,101 @@
+/* EducationSection.css */
+
+.education-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  /* Light gray background for the section */
+  color: #333;
+  /* Dark text for readability */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  /* Large text for the section heading */
+}
+
+.education-grid {
+  display: flex;
+  justify-content: space-between;
+  /* Evenly space the cards */
+  flex-wrap: wrap;
+  /* Allow wrapping for smaller screens */
+  gap: 1rem;
+  /* Space between cards */
+}
+
+.education-card {
+  flex: 1;
+  /* Allows cards to grow and fill the space */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  /* Rounded corners */
+  background-color: white;
+  /* White background for the card */
+  max-width: calc(33.333% - 1rem);
+  /* Ensures no more than 3 cards in a row */
+}
+
+.education-card h3 {
+  color: #087f5b;
+  /* Accent color for the institution name */
+  margin-bottom: 0.5rem;
+}
+
+.education-card p {
+  color: #444;
+  /* Slightly lighter text for the degree and year */
+  margin-bottom: 0.5rem;
+}
+
+.education-card ul {
+  list-style: none;
+  /* Remove default list styling */
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.education-card li {
+  display: flex;
+  /* Align icon with text */
+  align-items: center;
+  /* Center items vertically */
+  margin-bottom: 0.5rem;
+  /* Space between list items */
+}
+
+.detail-icon {
+  width: 24px;
+  /* Set the icon size */
+  height: 24px;
+  margin-right: 0.5rem;
+  /* Space between the icon and text */
+  stroke: #087f5b;
+  /* Icon color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .education-card {
+    /* Adjusts the width for smaller screens */
+    max-width: calc(50% - 1rem);
+    /* 2 cards per row on smaller desktops/tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    justify-content: center;
+    /* Center cards on smaller screens */
+  }
+
+  .education-card {
+    /* Cards take more space on smaller screens */
+    max-width: calc(100% - 1rem);
+    /* Full width for small screens */
+  }
+}

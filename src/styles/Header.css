@@ -1,12 +1,93 @@
+/* Header.css */
+
+/* General header styles */
 header {
   background-color: #333;
+  /* Dark background for the header */
   color: white;
+  /* Light text for readability */
   padding: 1rem;
   text-align: center;
+  /* Centering the content */
 }
 
-.logo img {
-  width: 50px;
-  /* Adjust as necessary */
-  height: auto;
+/* Navbar styles */
+.navbar {
+  display: flex;
+  /* Flexbox layout for the navbar */
+  justify-content: space-between;
+  /* Space between navbar items */
+  align-items: center;
+  /* Vertically center navbar items */
+  padding: 0.5rem 1rem;
+  /* Padding around the navbar */
+  background-color: #444;
+  /* Slightly lighter than the header for contrast */
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  /* Larger text for the brand/logo */
+  color: #fff;
+  /* White text for the brand/logo */
+  text-decoration: none;
+  /* No underlines on the brand/logo */
+}
+
+/* Header text box styles */
+.header-text-box {
+  padding: 2rem;
+  /* Padding around the text box */
+  margin-top: 1rem;
+  /* Space between the navbar and text box */
+}
+
+.header-text-box h1 {
+  font-size: 2.5rem;
+  /* Large text for the main heading */
+  margin-bottom: 0.5rem;
+  /* Space between the heading and subheading */
+}
+
+.header-text-box h2 {
+  font-size: 1.8rem;
+  /* Smaller text for the subheading */
+  color: #ddd;
+  /* Slightly dimmer color for the subheading */
+  margin-bottom: 1rem;
+  /* Space between the subheading and paragraph */
+}
+
+.header-text-box p {
+  font-size: 1rem;
+  /* Standard text size for the paragraph */
+  line-height: 1.5;
+  /* Spacing between lines for readability */
+  margin-bottom: 1.5rem;
+  /* Space between the paragraph and the button */
+}
+
+/* Button styles */
+.btn-outline-success {
+  padding: 10px 20px;
+  /* Padding inside the button */
+  font-size: 1rem;
+  /* Text size within the button */
+  color: #28a745;
+  /* Color of the button text */
+  border: 2px solid #28a745;
+  /* Border color matching the text */
+  background-color: transparent;
+  /* Transparent background */
+  text-transform: uppercase;
+  /* Uppercase text for emphasis */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  /* Green background on hover */
+  color: white;
+  /* White text on hover */
 }

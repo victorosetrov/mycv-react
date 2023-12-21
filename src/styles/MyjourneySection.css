@@ -1,0 +1,44 @@
+/* MyjourneySection.css */
+
+.my-journey-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  /* Light gray background, adjust as needed */
+}
+
+.container {
+  max-width: 800px;
+  /* Adjust the width as needed */
+  margin: auto;
+  /* Center the container */
+  padding: 1rem;
+}
+
+.new-section-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  /* Adjust the size as needed */
+  text-align: center;
+  /* Center the section title */
+}
+
+/* Style for the paragraphs */
+.my-journey-section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  /* Improve readability */
+  color: #333;
+  /* Dark color for text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .new-section-title {
+    font-size: 1.5rem;
+    /* Smaller font size for smaller screens */
+  }
+}
