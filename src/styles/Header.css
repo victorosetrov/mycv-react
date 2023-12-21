@@ -1,0 +1,12 @@
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo img {
+  width: 50px;
+  /* Adjust as necessary */
+  height: auto;
+}
