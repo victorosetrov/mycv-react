@@ -1,0 +1,45 @@
+/* AchievementsSection.css */
+
+.professional-achievements {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  /* Light gray background */
+  color: #333;
+  /* Dark text for readability */
+}
+
+.container {
+  max-width: 800px;
+  /* Adjust the width as needed */
+  margin: auto;
+  /* Center the container */
+}
+
+.new-section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  /* Large text for the section heading */
+}
+
+.achievements-list {
+  list-style: none;
+  /* Remove default list styling */
+  padding: 0;
+}
+
+.achievement-item {
+  margin-bottom: 1rem;
+  /* Space between items */
+  font-size: 1rem;
+  /* Adjust the size as needed */
+}
+
+.achievement-year {
+  font-weight: bold;
+  /* Make the year stand out */
+  color: #087f5b;
+  /* Accent color for the year */
+}
+
+/* Add any additional styling or responsive design as needed */

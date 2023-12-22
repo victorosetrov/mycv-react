@@ -1,6 +1,7 @@
 // WorkExperienceSection.jsx
 
 import React from "react";
+import DonutChart from "./DonutChart";
 import {
   BriefcaseIcon,
   CodeIcon,

@@ -1,0 +1,41 @@
+/* AchievementsTimeline.css */
+
+.professional-achievements {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.new-section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.achievement-year {
+  font-weight: bold;
+  margin-right: 1rem;
+  background-color: #087f5b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.achievement-description {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add any responsive design or additional styling as needed */

@@ -12,6 +12,44 @@ import EducationSection from './components/sections/EducationSection';
 import TestimonialSection from './components/sections/TestimonialSection';
 import MyjourneySection from './components/sections/MyjourneySection';
 import WorkExperienceSection from './components/sections/WorkExperienceSection';
+import MyProfessionalJourneySection from './components/sections/MyProfessionalJourneySection';
+import TestimonialsSection from './components/sections/TestimonialsSection';
+import AchievementsSection from './components/sections/AchievementsSection';
+
+// Import the new DonutChartSection
+import DonutChartSection from './components/sections/DonutChartSection'; // Adjust the path as needed
+import AchievementsTimeline from './components/sections/AchievementsTimeline';
+
+// Dummy data for the Donut Chart, replace with your actual data
+const chartData = [
+  {
+    label: "Zendesk - Technical Support Engineer",
+    value: 31,
+    color: "#f76c6c"
+  },
+  {
+    label: "Accenture - Technical Support Analyst",
+    value: 20,
+    color: "#1bc98e"
+  },
+  {
+    label: "Hewlett Packard - IT Roll-up/out Engineer",
+    value: 2,
+    color: "#5bc0de"
+  },
+  {
+    label: "RealSpeaker LTD - IT Manager and web-developer",
+    value: 32,
+    color: "#f0ad4e"
+  },
+  {
+    label: "RealSpeaker Lab - IT Manager and software-developer",
+    value: 55,
+    color: "#d9534f"
+  }
+];
+
+
 
 function App() {
   return (
@@ -25,7 +63,12 @@ function App() {
         <EducationSection />
         <TestimonialSection />
         <MyjourneySection />
+        <DonutChartSection data={chartData} /> {/* Add the DonutChartSection here */}
         <WorkExperienceSection />
+        <MyProfessionalJourneySection/>
+        <TestimonialsSection/>
+        <AchievementsTimeline/>
+        
         {/* <AboutSection />
         <ContactSection /> */}
         {/* Add more sections as needed */}
