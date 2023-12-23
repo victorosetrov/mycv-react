@@ -1,0 +1,53 @@
+/* WebDeveloperProjectsSection.css */
+
+.new-website-wrapper {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.new-section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.new-row-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.new-feature-item {
+  flex: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  max-width: calc(50% - 1rem);
+}
+
+.new-feature-item h3 {
+  color: #087f5b;
+  margin-bottom: 0.5rem;
+}
+
+.new-feature-item p {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.new-feature-item a {
+  text-decoration: none;
+  color: #007bff;
+  /* Bootstrap primary color for reference */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .new-feature-item {
+    max-width: calc(100% - 1rem);
+  }
+}
