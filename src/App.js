@@ -16,6 +16,7 @@ import MyProfessionalJourneySection from './components/sections/MyProfessionalJo
 import TestimonialsSection from './components/sections/TestimonialsSection';
 import MyProjectsSection from './components/sections/MyProjectsSection';
 import WebDeveloperProjectsSection from './components/sections/WebDeveloperProjectsSection';
+import QuizAboutMe from './components/sections/QuizAboutMe';
 
 // Import the new DonutChartSection
 import DonutChartSection from './components/sections/DonutChartSection'; // Adjust the path as needed
@@ -71,6 +72,7 @@ function App() {
         <MyProjectsSection/>
         <WebDeveloperProjectsSection/>
         <AchievementsTimeline/>
+        <QuizAboutMe/>
         
         {/* <AboutSection />
         <ContactSection /> */}

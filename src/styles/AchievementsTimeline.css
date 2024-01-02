@@ -14,12 +14,21 @@
 .achievements-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+
+.achievement-item:not(:last-child) {
+  margin-bottom: 2rem;
+  /* Adjust as needed */
 }
 
 .achievement-item {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  transform-origin: left center;
 }
 
 .achievement-year {
@@ -36,6 +45,13 @@
   padding: 0.5rem;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-item:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  transform-origin: center;
+  /* This ensures the enlarged item doesn't get hidden behind other elements */
 }
 
 /* Add any responsive design or additional styling as needed */
