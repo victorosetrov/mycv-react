@@ -1,11 +1,20 @@
-// In Header.js
-import React from "react";
-import "../../styles/Header.css";
+// Header.jsx
+import React, { useState } from "react";
+import "../../styles/Header.css"; // Ensure this path is correct to your Header.css file
+import Modal from "./Modal"; // Ensure this path is correct to your Modal component
 
 function Header() {
+  // State to control the visibility of the modal
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  // Function to handle the button click and show the modal
+  const handleButtonClick = () => {
+    setIsModalVisible(true);
+  };
+
   return (
     <header>
-      {/* Navigation */}
+      {/* Navigation Bar */}
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <span className="navbar-brand mb-0 h1">#OpenToWork</span>
       </nav>
@@ -22,22 +31,18 @@ function Header() {
           and recently, Zendesk.
         </p>
 
-        {/* Form (simplified for React) */}
-        <form className="form-inline">
-          <p className="features-text">
-            Please enter your Email address:
-            <br />
-            <input className="form-control mr-sm-2" type="text" id="myEmail" />
-          </p>
-          <button
-            type="button"
-            className="btn btn-outline-success btn-lg"
-            onClick={() => alert("Functionality to be implemented")}
-          >
-            Get in touch with me for more information
-          </button>
-        </form>
+        {/* Button to Open Modal */}
+        <button
+          type="button"
+          className="btn btn-outline-success btn-lg"
+          onClick={handleButtonClick}
+        >
+          Get in touch with me for more information
+        </button>
       </div>
+
+      {/* Conditional rendering of Modal Component */}
+      {isModalVisible && <Modal closeModal={() => setIsModalVisible(false)} />}
     </header>
   );
 }

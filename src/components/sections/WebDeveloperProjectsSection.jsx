@@ -5,39 +5,77 @@ import "../../styles/WebDeveloperProjectsSection.css"; // Ensure this path is co
 
 const projects = [
   {
-    title: "Travel App / Bookstore App",
-    technologies: "NodeJS, MongoDB, Stripe API, GraphQL, Heroku",
+    title:
+      "RealtorApp / ShopApp / 123App / Bootstrap / 99Bottles / Diary / ToponymicsApp / NewsWorthyApp",
+    technologies:
+      "NodeJS, MongoDB, Stripe API, GraphQL, Heroku, HTML5, CSS3, JavaScript, SCSS, Bootstrap, MERN, ReactJS, ExpressJS, APIs",
     links: [
       {
-        text: "Travel App Link",
-        url: "https://floating-waters-24985.herokuapp.com/",
+        text: "RealtorApp",
+        url: "https://victorosetrov.github.io/nexter/",
       },
       {
-        text: "Travel App Code",
-        url: "https://github.com/victorosetrov/natours",
+        text: "ShopApp",
+        url: "https://victorosetrov.github.io/dublinchairs/",
       },
-      { text: "Bookstore Link", url: "https://node-mybook.herokuapp.com/" },
+      {
+        text: "123App",
+        url: "https://victorosetrov.github.io/rock-paper-scissors/",
+      },
+      {
+        text: "Bootstrap",
+        url: "https://victorosetrov.github.io/CV/",
+      },
+      {
+        text: "99Bottles",
+        url: "https://victorosetrov.github.io/99bottles/",
+      },
+      {
+        text: "Diary",
+        url: "https://victorosetrov.github.io/SubjectAndScore/",
+      },
+      {
+        text: "ToponymicsApp",
+        url: "https://drive.google.com/file/d/1iOu-K7ZONSZvsYDFcpnR4rzUnS_kEl17/view?usp=sharing",
+      },
+      {
+        text: "NewsWorthyApp",
+        url: "https://drive.google.com/file/d/1ieMFkKhjBAKAG1EmF_1RDtewp61IBNt_/view?usp=sharing",
+      },
     ],
   },
   {
-    title: "To-Do List App / Compare Yourself App",
+    title:
+      "To-DoList / CompareYourself / WeatherScrapper / ForkApp / TravelApp",
     technologies:
-      "React, AWS (EC2, ECS, Cognito, Lambda, API Gateway, IAM, S3, CloudFront), MongoDB, Angular, NodeJS, Docker",
+      "ReactJS, AWS (EC2, ECS, Cognito, Lambda, API Gateway, IAM, S3, CloudFront, Cloud9), MongoDB, AngularJS, NodeJS, Docker, PHP, MySQL, API, HTML5, CSS3, JavaScript, Netlify",
     links: [
       {
-        text: "To-Do List Link",
+        text: "To-DoList",
         url: "http://goals-react-lb-824410420.eu-west-1.elb.amazonaws.com/",
       },
       {
-        text: "Compare Yourself Link",
+        text: "CompareYourself",
         url: "http://d1b9adtxte5ckb.cloudfront.net/",
+      },
+      {
+        text: "WeatherScrapper",
+        url: "https://victorosetrov.github.io/weather-scraper-php-api-app/",
+      },
+      {
+        text: "ForkApp",
+        url: "https://stupefied-bardeen-87446e.netlify.app/",
+      },
+      {
+        text: "TravelApp",
+        url: "https://victorosetrov.github.io/travelapp/",
       },
     ],
   },
   {
-    title: "E-commerce App",
+    title: "E-commerceApp / BankApp / MapApp / LoginLogout",
     technologies:
-      "Braintree SDK, PayPal API, React, MongoDB, NodeJS, Digital Ocean",
+      "Braintree SDK, PayPal API, ReactJS, MongoDB, NodeJS, Digital Ocean, HTML5, CSS3, JavaScript, Blockchain, Geo API, PHP, MySQL",
     links: [
       { text: "E-commerce App Link", url: "http://161.35.42.71/" },
       {
@@ -46,22 +84,74 @@ const projects = [
       },
       {
         text: "Frontend Code",
-        url: "https://github.com/victorosetrov/ecommerce",
+        url: "https://victorosetrov.github.io/ecommerce/",
+      },
+      {
+        text: "BankApp Core",
+        url: "https://victorosetrov.github.io/bank-app/",
+      },
+      {
+        text: "BankApp Frontend",
+        url: "https://victorosetrov.github.io/bank-lp/",
+      },
+      {
+        text: "MapApp",
+        url: "https://victorosetrov.github.io/mapapp/",
+      },
+      {
+        text: "LoginLogout",
+        url: "https://victorosetrov.github.io/signup-login-logout-php-mysql-page/",
       },
     ],
   },
   {
-    title: "Find a Coach App / My Burger App / Recipe Book App",
-    technologies: "Vue, React, Angular, Firebase",
+    title: "FindACoach / MyBurger / RecipeBook / PigGame / GuessMyNumber",
+    technologies:
+      "VueJS, ReactJS, AngularJS, Firebase, HTML5, CSS3, JavaScript",
     links: [
       {
-        text: "Find A Coach Link",
+        text: "FindACoach",
         url: "https://vuejs-coach-project.web.app/coaches",
       },
-      { text: "My Burger Link", url: "https://react-my-burger-4ab31.web.app/" },
+      { text: "MyBurger", url: "https://react-my-burger-4ab31.web.app/" },
       {
-        text: "Recipe Book Link",
+        text: "RecipeBook",
         url: "https://ng-recipe-book-e6065.firebaseapp.com/",
+      },
+      {
+        text: "PigGame",
+        url: "https://victorosetrov.github.io/pig-game/",
+      },
+      {
+        text: "GuessMyNumber",
+        url: "https://victorosetrov.github.io/guess-my-number/",
+      },
+    ],
+  },
+  {
+    title: "BookingApp / ShowModal / DonutChart / JobChart / FitnessChart",
+    technologies:
+      "NodeJS, ExpressJS, MongoDB, Mongoose, HTML5, CSS3, JavaScript, D3JS, SCSS, APIs",
+    links: [
+      {
+        text: "BookingApp",
+        url: "https://victorosetrov.github.io/trillo/",
+      },
+      {
+        text: "ShowModal",
+        url: "https://victorosetrov.github.io/show-modal/",
+      },
+      {
+        text: "DonutChart",
+        url: "https://victorosetrov.github.io/donutchart/",
+      },
+      {
+        text: "JobChart",
+        url: "https://victorosetrov.github.io/jobchart/",
+      },
+      {
+        text: "FitnessChart",
+        url: "https://victorosetrov.github.io/fitnesschart/",
       },
     ],
   },

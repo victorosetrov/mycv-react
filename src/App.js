@@ -1,25 +1,23 @@
+// App.js
 import React from 'react';
-import './styles/App.css'; // If you have a general stylesheet
+import './styles/App.css';
 
-// Import your components
-import Header from './components/header/Header'; // Adjust if you have a specific file for Header
+// Import header and footer components
+import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import HomeSection from './components/sections/HomeSection';
+
+// Import section components
 import ProfessionalTitle from './components/sections/ProfessionalTitle';
-import AboutSection from './components/sections/AboutSection';
-import ContactSection from './components/sections/ContactSection';
 import EducationSection from './components/sections/EducationSection';
 import TestimonialSection from './components/sections/TestimonialSection';
 import MyjourneySection from './components/sections/MyjourneySection';
+import DonutChartSection from './components/sections/DonutChartSection';
 import WorkExperienceSection from './components/sections/WorkExperienceSection';
 import MyProfessionalJourneySection from './components/sections/MyProfessionalJourneySection';
 import TestimonialsSection from './components/sections/TestimonialsSection';
 import MyProjectsSection from './components/sections/MyProjectsSection';
 import WebDeveloperProjectsSection from './components/sections/WebDeveloperProjectsSection';
 import QuizAboutMe from './components/sections/QuizAboutMe';
-
-// Import the new DonutChartSection
-import DonutChartSection from './components/sections/DonutChartSection'; // Adjust the path as needed
 import AchievementsTimeline from './components/sections/AchievementsTimeline';
 
 // Dummy data for the Donut Chart, replace with your actual data
@@ -51,36 +49,32 @@ const chartData = [
   }
 ];
 
-
-
 function App() {
   return (
     <div className="App">
       <Header />
-      
-      {/* Main Page Content */}
-      <main>
-        {/* <HomeSection /> */}
-        <ProfessionalTitle />
-        <EducationSection />
-        <TestimonialSection />
-        <MyjourneySection />
-        <DonutChartSection data={chartData} /> {/* Add the DonutChartSection here */}
-        <WorkExperienceSection />
-        <MyProfessionalJourneySection/>
-        <TestimonialsSection/>
-        <MyProjectsSection/>
-        <WebDeveloperProjectsSection/>
-        <AchievementsTimeline/>
-        <QuizAboutMe/>
-        
-        {/* <AboutSection />
-        <ContactSection /> */}
-        {/* Add more sections as needed */}
-      </main>
-      
+      <MainContent chartData={chartData}/>
       <Footer />
     </div>
+  );
+}
+
+function MainContent({ chartData }) {
+  return (
+    <main>
+      <ProfessionalTitle />
+      <EducationSection />
+      <TestimonialSection />
+      <MyjourneySection />
+      <DonutChartSection data={chartData} />
+      <WorkExperienceSection />
+      <MyProfessionalJourneySection />
+      <TestimonialsSection />
+      <MyProjectsSection />
+      <WebDeveloperProjectsSection />
+      <AchievementsTimeline />
+      <QuizAboutMe />
+    </main>
   );
 }
 

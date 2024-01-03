@@ -15,13 +15,26 @@ function Footer() {
         {/* Social Media Links or other links */}
         <div className="social-links">
           <a
-            href="https://twitter.com/"
+            href="https://twitter.com/ViktorOsetrov"
             target="_blank"
             rel="noopener noreferrer"
           >
             Twitter
           </a>
-          {/* Add other social media links */}
+          <a
+            href="https://www.hackerrank.com/profile/victorosetrov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HackerRank
+          </a>
+          <a
+            href="https://github.com/victorosetrov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </footer>
