@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/QuizAboutMe.css"; // Ensure this path is correct for your project
 
 function QuizAboutMe() {
-  const [userChoice, setUserChoice] = useState("");
+  // Removed the useState hook for userChoice as it's not being used currently.
 
   const handleQuiz = () => {
     const choice = prompt(
@@ -12,7 +12,8 @@ function QuizAboutMe() {
       // Checks if the user didn't press 'Cancel'
       const formattedChoice = choice.toLowerCase(); // Convert user input to lowercase
 
-      setUserChoice(formattedChoice);
+      // Removed setUserChoice(formattedChoice); as userChoice state is removed.
+
       if (formattedChoice === "historian") {
         alert("You are a winner 🎉");
       } else if (
