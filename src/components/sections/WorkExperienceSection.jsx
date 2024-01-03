@@ -1,7 +1,7 @@
 // WorkExperienceSection.jsx
 
 import React from "react";
-import DonutChart from "./DonutChart";
+// Removed DonutChart import as it's not used in this component
 import {
   BriefcaseIcon,
   CodeIcon,
@@ -9,7 +9,7 @@ import {
   ServerIcon,
   SupportIcon,
 } from "@heroicons/react/outline";
-import "../../styles/WorkExperienceSection.css"; // Ensure you create and import the corresponding CSS file
+import "../../styles/WorkExperienceSection.css"; // Ensure the path is correct for your project
 
 // Mapping the details to specific icons for demonstration
 const achievementIcons = {
