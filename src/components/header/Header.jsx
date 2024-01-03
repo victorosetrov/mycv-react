@@ -22,7 +22,7 @@ function Header() {
       {/* Header Content */}
       <div className="header-text-box">
         <h1>Hey, I'm Viktor</h1>
-        <h2>Senior Full Stack Software Engineer ❤️❤️❤️</h2>
+        <h2>Senior Full Stack Software Engineer ❤️</h2>
         <p className="header-text">
           Explore my 12-year IT adventure, where I've grown between tech
           start-ups and corporates. Skilled in DevOps, Tech Analysis and Support
