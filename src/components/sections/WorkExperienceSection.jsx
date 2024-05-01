@@ -23,12 +23,12 @@ const achievementIcons = {
 
 const workExperiences = [
   {
-    company: "New Exciting Journey [Your New Role]",
-    role: "[Your New Role]",
-    period: "Jan 2024 – ∞",
+    company: "Intellync",
+    role: "Senior Support Engineer",
+    period: "Apr 2024 – NOW",
     achievements: [
-      "[Key Achievement or Focus Area 1]",
-      "[Key Achievement or Focus Area 2]",
+      "Feedlync - IoT feeding system and cloud based service for dairy farmers",
+      "Herdlync - CRM platform for dairy farmers",
     ],
   },
   {
