@@ -46,6 +46,11 @@ const chartData = [
     label: "RealSpeaker Lab - IT Manager and software-developer",
     value: 55,
     color: "#d9534f"
+  },
+  {
+    label: "Intellync (AB Agri) - Senior Support Engineer",
+    value: 6,
+    color: "#9370db"
   }
 ];
 
