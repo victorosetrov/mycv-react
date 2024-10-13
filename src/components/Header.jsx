@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false); // For toggling the mobile menu
+
+  useEffect(() => {
+    // Apply dark or light mode based on the state
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+  }, [isDarkMode]);
 
   return (
     <header className="bg-gradient-indigo-purple text-white shadow-effect py-4 w-full">
@@ -10,7 +15,7 @@ const Header = () => {
         {/* Moon or Sun Icon Toggle */}
         <div className="flex items-center space-x-2">
           <button
-            className={`focus:outline-none w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-md ${isDarkMode ? 'bg-yellow-400' : 'bg-white'}`}
+            className="focus:outline-none w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-md"
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label="Toggle Dark Mode"
           >
@@ -53,13 +58,21 @@ const Header = () => {
 
         {/* Hamburger menu button for mobile */}
         <button
-          className="block lg:hidden focus:outline-none"
+          className="block lg:hidden focus:outline-none w-12 h-12 bg-transparent border-none"
           onClick={() => setMenuOpen(!menuOpen)} // Toggle the menu
           aria-label="Toggle Menu"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
+          {menuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <div className="w-6 h-6 flex flex-col justify-between">
+              <span className="block h-0.5 bg-white"></span>
+              <span className="block h-0.5 bg-white"></span>
+              <span className="block h-0.5 bg-white"></span>
+            </div>
+          )}
         </button>
 
         {/* Desktop Menu */}
@@ -75,19 +88,21 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Mobile Menu */}
+        {/* Mobile Popup Menu */}
         {menuOpen && (
-          <nav className="lg:hidden flex flex-col space-y-4 mt-4">
-            <a href="#about" className="text-white text-lg font-bold drop-shadow-md hover:underline">
-              About
-            </a>
-            <a href="#experience" className="text-white text-lg font-bold drop-shadow-md hover:underline">
-              Experience
-            </a>
-            <a href="#contact" className="text-white text-lg font-bold drop-shadow-md hover:underline">
-              Contact
-            </a>
-          </nav>
+          <div className="fixed inset-0 bg-gradient-indigo-purple bg-opacity-90 z-50 flex flex-col justify-center items-center">
+            <nav className="flex flex-col space-y-4 text-center">
+              <a href="#about" onClick={() => setMenuOpen(false)} className="text-white text-2xl font-bold hover:underline">
+                About
+              </a>
+              <a href="#experience" onClick={() => setMenuOpen(false)} className="text-white text-2xl font-bold hover:underline">
+                Experience
+              </a>
+              <a href="#contact" onClick={() => setMenuOpen(false)} className="text-white text-2xl font-bold hover:underline">
+                Contact
+              </a>
+            </nav>
+          </div>
         )}
       </div>
     </header>

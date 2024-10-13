@@ -50,7 +50,6 @@ const DonutChartSection = ({ chartData }) => {
 
   return (
     <section className="donut-chart-section">
-      <h2 className="text-lg opacity-80 leading-relaxed">My Work Breakdown</h2>
       <div className="donut-chart-wrapper">
         <div className="donut-chart">
           <Doughnut ref={chartRef} data={data} options={options} />
