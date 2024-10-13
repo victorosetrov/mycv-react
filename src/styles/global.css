@@ -275,15 +275,15 @@ input[type="email"] {
 
 /* Flex-row adjustments for medium-sized screens */
 @media (max-width: 1024px) {
-  .lg\\:flex-row {
+  .flex-row-md {
     flex-direction: column;
   }
 
-  .lg\\:w-1\\/2 {
+  .w-1-2-md {
     width: 100%;
   }
 
-  .lg\\:gap-20 {
+  .gap-md {
     gap: 16px;
   }
 }
