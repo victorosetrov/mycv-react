@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gradient-indigo-purple text-white py-6">
       <div className="container mx-auto text-center px-4">
         <p className="text-white text-sm sm:text-base">
-          © 2024 Viktor Osetrov. All rights reserved. <br />
+          © 2024-2025 Viktor Osetrov. All rights reserved. <br />
           Made with love and React ❤️
         </p>
 
