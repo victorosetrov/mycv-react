@@ -6,7 +6,6 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import '../styles/donutChartSection.css';
 
 
 ChartJS.register(ArcElement, Tooltip, Legend);
