@@ -307,6 +307,21 @@ input[type="email"] {
   }
 }
 
+/* Mobile Menu adjustments */
+.lg\\:hidden {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .lg\\:hidden {
+    display: block !important;
+  }
+
+  .lg\\:flex {
+    display: none !important;
+  }
+}
+
 /* Galaxy Z Fold 5 Compatibility */
 
 /* Folded state (outer display) */

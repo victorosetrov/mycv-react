@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-  }, [isDarkMode]);
+  const [menuOpen, setMenuOpen] = useState(false); // For toggling the mobile menu
 
   return (
     <header className="bg-gradient-indigo-purple text-white shadow-effect py-4 w-full">
       <div className="container mx-auto max-w-screen-xl flex justify-between items-center px-4">
         {/* Moon or Sun Icon Toggle */}
         <div className="flex items-center space-x-2">
-          <button 
+          <button
             className={`focus:outline-none w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-md ${isDarkMode ? 'bg-yellow-400' : 'bg-white'}`}
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label="Toggle Dark Mode"
@@ -54,6 +51,17 @@ const Header = () => {
           </h1>
         </div>
 
+        {/* Hamburger menu button for mobile */}
+        <button
+          className="block lg:hidden focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)} // Toggle the menu
+          aria-label="Toggle Menu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+
         {/* Desktop Menu */}
         <nav className="hidden lg:flex space-x-8">
           <a href="#about" className="text-white text-lg sm:text-xl font-bold drop-shadow-md hover:underline">
@@ -66,6 +74,21 @@ const Header = () => {
             Contact
           </a>
         </nav>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <nav className="lg:hidden flex flex-col space-y-4 mt-4">
+            <a href="#about" className="text-white text-lg font-bold drop-shadow-md hover:underline">
+              About
+            </a>
+            <a href="#experience" className="text-white text-lg font-bold drop-shadow-md hover:underline">
+              Experience
+            </a>
+            <a href="#contact" className="text-white text-lg font-bold drop-shadow-md hover:underline">
+              Contact
+            </a>
+          </nav>
+        )}
       </div>
     </header>
   );
