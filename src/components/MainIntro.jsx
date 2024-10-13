@@ -30,7 +30,7 @@ const MainIntro = ({ isDarkMode }) => {
 
     // Send the email to the backend
     try {
-      const response = await axios.post('http://viktorosetrov.com/api/subscribe', { email });
+      const response = await axios.post('https://mywebsite-server-72f4d98c3636.herokuapp.com/api/subscribe', { email });
       console.log(response.data); // Log the server response
       setIsEmailSubmitted(true); // Update state if email is successfully submitted
     } catch (error) {
