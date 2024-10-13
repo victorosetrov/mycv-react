@@ -133,6 +133,27 @@ button:hover {
   }
 }
 
+/* Fix for small screens to make heading larger */
+@media (max-width: 640px) {
+  .heading-style {
+    font-size: 1.75rem; /* Make the heading larger */
+    text-align: center; /* Center the heading */
+    font-weight: 800;
+  }
+
+  .subheading-style {
+    font-size: 1.25rem; /* Subheading slightly smaller than heading */
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .text-lg {
+    font-size: 1rem; /* Adjust font size of additional text */
+    text-align: center;
+    line-height: 1.4;
+  }
+}
+
 /* Styles from donutChartSection.css */
 .donut-chart-section {
   text-align: center;
@@ -219,20 +240,18 @@ input[type="email"] {
 /* Responsive Typography and Centralization for Mobile Devices */
 @media (max-width: 640px) {
   .heading-style {
-    font-size: 1.5rem; /* Smaller heading size */
-    text-align: center; /* Centralize heading */
-    transform: scale(0.85); /* Scale down text */
+    font-size: 1.75rem; /* Make heading larger */
+    text-align: center; /* Center heading */
   }
 
   .text-lg {
-    font-size: 0.875rem; /* Reduce text size */
-    text-align: center; /* Centralize text */
-    transform: scale(0.85); /* Scale down text */
+    font-size: 1rem; /* Adjust size for body text */
+    text-align: center;
   }
 
   .leading-relaxed {
     line-height: 1.4;
-    text-align: center; /* Centralize text */
+    text-align: center;
   }
 
   .container {
