@@ -6,10 +6,7 @@ import Footer from './components/Footer';
 
 function App () {
   useEffect(() => {
-    // Initialize Google Analytics with your GA4 measurement ID
     ReactGA.initialize('G-TCZ8FM15EP');
-    
-    // Send initial pageview event
     ReactGA.send('pageview');
   }, []);
   return (
