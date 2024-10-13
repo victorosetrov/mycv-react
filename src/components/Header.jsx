@@ -15,7 +15,7 @@ const Header = () => {
         {/* Moon or Sun Icon Toggle */}
         <div className="flex items-center space-x-2">
           <button
-            className="focus:outline-none w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-md"
+            className="focus:outline-none w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-md bg-yellow-400"
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label="Toggle Dark Mode"
           >
@@ -41,7 +41,7 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-8 w-8 sm:h-10 sm:w-10 text-yellow-400"
+                className="h-8 w-8 sm:h-10 sm:w-10 text-white"
               >
                 <path
                   strokeLinecap="round"
