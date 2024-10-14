@@ -1,8 +1,6 @@
-import React, { useState, Suspense } from 'react';
-import axios from 'axios';
-
-// Lazy load DonutChartSection
-const DonutChartSection = React.lazy(() => import('./DonutChartSection'));
+import React, { useState } from 'react';
+import axios from 'axios'; // Import Axios for making API calls
+import DonutChartSection from './DonutChartSection';
 
 const chartData = [
   { label: "Intellync (AB Agri) - Senior Support Engineer", value: 6, color: "#9370db" },
@@ -14,22 +12,27 @@ const chartData = [
 ];
 
 const MainIntro = ({ isDarkMode }) => {
-  const [email, setEmail] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
+  const [email, setEmail] = useState(''); // State to hold email input value
+  const [emailError, setEmailError] = useState(''); // State to hold email errors
+  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false); // Track email submission
 
+  // Function to validate and send email
   const handleSubmit = async () => {
+    // Email validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       setEmailError('Please enter a valid email address.');
       return;
     }
     
+    // Clear error if email is valid
     setEmailError('');
 
+    // Send the email to the backend
     try {
       const response = await axios.post('https://mywebsite-server-72f4d98c3636.herokuapp.com/api/subscribe', { email });
-      setIsEmailSubmitted(true);
+      console.log(response.data); // Log the server response
+      setIsEmailSubmitted(true); // Update state if email is successfully submitted
     } catch (error) {
       setEmailError('There was an error submitting the email.');
     }
@@ -58,6 +61,7 @@ const MainIntro = ({ isDarkMode }) => {
             You're already on the list! We'll be in touch soon.
           </div>
         ) : (
+          // Email input, button, and privacy policy text
           <div className="form-section">
             <input
               type="email"
@@ -75,16 +79,15 @@ const MainIntro = ({ isDarkMode }) => {
             >
               Subscribe
             </button>
+
           </div>
         )}
       </div>
 
       {/* Donut Chart Section */}
-      <Suspense fallback={<div>Loading chart...</div>}>
-        <div className="lg:w-1/3 flex justify-center lg:justify-start min-w-[300px] donut-chart-wrapper">
-          <DonutChartSection chartData={chartData} />
-        </div>
-      </Suspense>
+      <div className="lg:w-1/3 flex justify-center lg:justify-start min-w-[300px] donut-chart-wrapper">
+        <DonutChartSection chartData={chartData} />
+      </div>
     </section>
   );
 };
