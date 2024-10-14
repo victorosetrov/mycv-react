@@ -51,7 +51,7 @@ const MainIntro = ({ isDarkMode }) => {
             I am a Senior Engineer ❤️ with 1️⃣3️⃣ years of IT expertise, navigating between startups and large corporations.
           </h1>
           <p className="text-md leading-relaxed">
-            Skilled in DevOps, Technical Analysis, and Support Engineering. With notable experience working for RealSpeaker, Google (via Accenture), Zendesk, and now Intellync.
+            With notable experience working for RealSpeaker, Google (via Accenture), Zendesk, and now Intellync.
           </p>
         </div>
 
