@@ -56,8 +56,8 @@ const CookieConsent = () => {
     <div style={bannerStyle}>
       <p style={{ margin: '0', fontSize: '14px' }}>
         By using our website, you agree to our{' '}
-        <a href="/privacy-policy" style={linkStyle}>Privacy Policy</a> and{' '}
-        <a href="/terms-of-use" style={linkStyle}>Terms of Use</a>.
+        <a href="/privacy-policy" style={linkStyle}>Policy</a> and{' '}
+        <a href="/terms-of-use" style={linkStyle}>Terms</a>.
       </p>
       <button style={buttonStyle} onClick={acceptCookies}>
         Accept and close
