@@ -45,7 +45,7 @@ const MainIntro = ({ isDarkMode }) => {
         {/* Introduction Section */}
         <div className="flex flex-col gap-4 items-center text-center lg:text-left lg:items-start">
           <h1 className="heading-style">
-            Hey. It's Viktor 👋
+            Hey. It's Viktor Osetrov 👋
           </h1>
           <h1 className="text-lg leading-relaxed">
             Senior Engineer with 13 years of IT experience, including RealSpeaker, Google, Zendesk, and Intellync.
