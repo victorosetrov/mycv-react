@@ -80,22 +80,6 @@ const MainIntro = ({ isDarkMode }) => {
               Subscribe
             </button>
 
-
-            {/* Privacy Policy and Terms Text Below the Button */}
-            <p className={`text-sm mt-2 leading-relaxed ${isDarkMode ? 'text-[#E0E0E0]' : 'text-gray-700'}`}>
-            When I am entering email I agree with our
-            <a href="/privacy-policy" className="underline ml-1" style={{ color: isDarkMode ? '#b3c7ff' : '#4c51bf' }}>
-              Privacy Policy
-            </a>
-            and
-            <a href="/terms-of-use" className="underline ml-1" style={{ color: isDarkMode ? '#b3c7ff' : '#4c51bf' }}>
-              Terms of Use
-            </a>.
-          </p>
-
-
-
-
           </div>
         )}
       </div>
