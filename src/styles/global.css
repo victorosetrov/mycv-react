@@ -14,12 +14,12 @@
 /* Dark Mode Variables */
 [data-theme="dark"] {
   --bg-color: #1a1a2e;
-  --text-color: #ffffff; /* White text on dark background */
+  --text-color: #e0e0e0; /* Lighter text color for dark mode */
   --highlight-color: #ffd700; /* Gold marker for dark mode */
-  --link-color: #ffffff; /* White links in dark mode */
+  --link-color: #b3c7ff; /* Lighter blue for better contrast on dark background */
 }
 
-/* Apply transitions for smooth effect when toggling dark mode */
+/* General Styles */
 html {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -55,8 +55,9 @@ a {
   text-decoration: underline; /* Ensure links are clearly visible */
 }
 
+/* Ensure links have good contrast in dark mode */
 [data-theme="dark"] a {
-  color: #ffffff; /* White links in dark mode */
+  color: var(--link-color); /* Use the lighter blue for dark mode */
 }
 
 /* General Centering */
@@ -111,7 +112,7 @@ a {
 }
 
 button:hover {
-  background-color: #d49a00; /* Even darker yellow on hover */
+  background-color: #d49a00; /* Ensure good contrast on hover */
 }
 
 /* Donut chart wrapper adjustments */
