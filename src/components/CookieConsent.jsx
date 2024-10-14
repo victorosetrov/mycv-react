@@ -55,7 +55,7 @@ const CookieConsent = () => {
   return (
     <div style={bannerStyle}>
       <p style={{ margin: '0', fontSize: '14px' }}>
-        We use cookies to ensure you get the best experience on our website. By using our website, you agree to our{' '}
+        We use cookies. By using our website, you agree to our{' '}
         <a href="/privacy-policy" style={linkStyle}>Privacy Policy</a> and{' '}
         <a href="/terms-of-use" style={linkStyle}>Terms of Use</a>.
       </p>
