@@ -32,15 +32,17 @@
     <!-- Manifest for PWA -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- Google Tag Manager (deferred for better performance) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCZ8FM15EP"></script>
 
-    <script defer>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCZ8FM15EP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-TCZ8FM15EP');
     </script>
+
 
     <title>Viktor Osetrov Portfolio Website</title>
   </head>
