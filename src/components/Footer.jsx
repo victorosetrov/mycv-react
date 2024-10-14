@@ -1,9 +1,28 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter, faSquareYoutube, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <footer className="bg-gradient-indigo-purple text-white py-6">
       <div className="container mx-auto text-center px-4">
+        {/* Social Media Icons */}
+        <div className="flex justify-center space-x-4 mb-4">
+          <a href="https://x.com/ViktorOsetrov" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" className="text-white">
+            <FontAwesomeIcon icon={faXTwitter} className="w-6 h-6 hover:scale-110 transform transition-transform" />
+          </a>
+          <a href="https://www.youtube.com/@RealSpeakerTV" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white">
+            <FontAwesomeIcon icon={faSquareYoutube} className="w-6 h-6 hover:scale-110 transform transition-transform" />
+          </a>
+          <a href="https://www.linkedin.com/in/realspeaker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white">
+            <FontAwesomeIcon icon={faLinkedinIn} className="w-6 h-6 hover:scale-110 transform transition-transform" />
+          </a>
+          <a href="https://www.instagram.com/viktorosetrov/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white">
+            <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 hover:scale-110 transform transition-transform" />
+          </a>
+        </div>
+
+        {/* Footer Text */}
         <p className="text-white text-sm sm:text-base">
           © 2024-2025 Viktor Osetrov. All rights reserved. <br />
           Made with Love and React ❤️
