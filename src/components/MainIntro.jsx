@@ -48,7 +48,7 @@ const MainIntro = ({ isDarkMode }) => {
             Hey. It's Viktor 👋
           </h1>
           <h1 className="text-lg leading-relaxed">
-           Senior Engineer with 13 years of IT experience across startups and corporations, including RealSpeaker, Google, Zendesk, and Intellync.
+            Senior Engineer with 13 years of IT experience across various areas, including RealSpeaker, Google, Zendesk, and Intellync.
           </h1>
         </div>
 
