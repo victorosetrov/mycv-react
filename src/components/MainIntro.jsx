@@ -74,18 +74,25 @@ const MainIntro = ({ isDarkMode }) => {
             {emailError && <p className="text-red-500 mt-2">{emailError}</p>}
 
             <button
-              className="bg-yellow-500 text-white rounded-md font-bold shadow-md hover:bg-yellow-600 mt-2"
-              onClick={handleSubmit}
-            >
-              Sign Me Up
+                className="bg-yellow-600 text-white rounded-md font-bold shadow-md hover:bg-yellow-700 mt-2"
+                onClick={handleSubmit}
+              >
+                Sign Me Up
             </button>
 
+
             {/* Privacy Policy and Terms Text Below the Button */}
-            <p className="text-sm mt-2 leading-relaxed" style={{ color: isDarkMode ? '#e5e5e5' : '#4a4a4a' }}>
+            <p className="text-sm mt-2 leading-relaxed" style={{ color: isDarkMode ? '#e0e0e0' : '#4a4a4a' }}>
               When I am entering email I agree with our 
-              <a href="/privacy-policy" className="underline ml-1">Privacy Policy</a> and 
-              <a href="/terms-of-use" className="underline ml-1">Terms of Use</a>.
+              <a href="/privacy-policy" className="underline ml-1" style={{ color: isDarkMode ? '#ffffff' : '#4c51bf' }}>
+                Privacy Policy
+              </a> 
+              and 
+              <a href="/terms-of-use" className="underline ml-1" style={{ color: isDarkMode ? '#ffffff' : '#4c51bf' }}>
+                Terms of Use
+              </a>.
             </p>
+
           </div>
         )}
       </div>

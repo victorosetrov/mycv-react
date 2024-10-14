@@ -6,17 +6,17 @@
 /* Light Mode Variables (Default) */
 :root {
   --bg-color: #ffffff;
-  --text-color: #000000;
-  --highlight-color: #ffeb3b; /* Yellow marker color */
-  --link-color: #4c51bf;
+  --text-color: #000000; /* Black text on white background for sufficient contrast */
+  --highlight-color: #e0b030; /* Darker yellow for contrast */
+  --link-color: #4c51bf; /* Blue for links with good contrast */
 }
 
 /* Dark Mode Variables */
 [data-theme="dark"] {
   --bg-color: #1a1a2e;
-  --text-color: #ffffff; /* Set text color to white for dark mode */
+  --text-color: #ffffff; /* White text on dark background */
   --highlight-color: #ffd700; /* Gold marker for dark mode */
-  --link-color: #6b46c1;
+  --link-color: #ffffff; /* White links in dark mode */
 }
 
 /* Apply transitions for smooth effect when toggling dark mode */
@@ -52,7 +52,11 @@ h1, h2, h3, p {
 
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline; /* Ensure links are clearly visible */
+}
+
+[data-theme="dark"] a {
+  color: #ffffff; /* White links in dark mode */
 }
 
 /* General Centering */
@@ -95,7 +99,7 @@ a {
   max-width: 100%; /* Fill available width */
   width: 100%;
   padding: 0.75rem;
-  background-color: #facc15;
+  background-color: #e0b030; /* Darker yellow for better contrast */
   color: white;
   font-weight: bold;
   border-radius: 8px;
@@ -107,7 +111,7 @@ a {
 }
 
 button:hover {
-  background-color: #f59e0b;
+  background-color: #d49a00; /* Even darker yellow on hover */
 }
 
 /* Donut chart wrapper adjustments */
@@ -214,7 +218,7 @@ button:hover {
 
 /* Button Styles */
 button {
-  background-color: #facc15; /* Sexy Yellow */
+  background-color: #e0b030; /* Darker yellow for better contrast */
   color: white;
   font-weight: bold;
   padding: 0.75rem;
@@ -225,7 +229,7 @@ button {
 }
 
 button:hover {
-  background-color: #f59e0b;
+  background-color: #d49a00; /* Even darker yellow on hover */
 }
 
 /* Input Field (Email) */
