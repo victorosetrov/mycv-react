@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import ReactGA from 'react-ga4';
-import Header from './components/Header';
-import MainIntro from './components/MainIntro';
-import Footer from './components/Footer';
-import CookieConsent from './components/CookieConsent';
+
+// Lazy load the components
+const Header = lazy(() => import('./components/Header'));
+const MainIntro = lazy(() => import('./components/MainIntro'));
+const Footer = lazy(() => import('./components/Footer'));
+const CookieConsent = lazy(() => import('./components/CookieConsent'));
 
 function App () {
   useEffect(() => {
@@ -12,14 +14,14 @@ function App () {
   }, []);
 
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Header />
       <main>
         <MainIntro />
       </main>
       <Footer />
-      <CookieConsent /> {/* Add the CookieConsent component here */}
-    </>
+      <CookieConsent />
+    </Suspense>
   );
 }
 
