@@ -51,7 +51,7 @@ const MainIntro = ({ isDarkMode }) => {
             Senior Engineer with 13 years of IT experience
           </h1>
           <h1 className="text-md leading-relaxed">
-            Including RealSpeaker, Google, Zendesk, and Intellync
+            RealSpeaker, Google, Zendesk, and Intellync
           </h1>
         </div>
 
