@@ -1,12 +1,13 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import ReactGA from 'react-ga4';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Lazy load the components
 const Header = lazy(() => import('./components/Header'));
 const MainIntro = lazy(() => import('./components/MainIntro'));
 const Footer = lazy(() => import('./components/Footer'));
 const CookieConsent = lazy(() => import('./components/CookieConsent'));
+const NotFound = lazy(() => import('./components/NotFound')); // Import the new NotFound component
 
 function App() {
   useEffect(() => {
@@ -25,8 +26,8 @@ function App() {
 
             {/* Add other routes here if needed */}
 
-            {/* Catch-all route for 404 - Redirect to main page */}
-            <Route path="*" element={<Navigate to="/" />} />
+            {/* Catch-all route for 404 */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
