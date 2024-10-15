@@ -1,5 +1,8 @@
 import React, { lazy, Suspense } from 'react'; // Removed useState as it's not used
-import DonutChartSection from './DonutChartSection';
+
+// Lazy load the components
+const DonutChartSection = lazy(() => import('./DonutChartSection'));
+const EmailSubscription = lazy(() => import('./EmailSubscription'));
 
 const chartData = [
   { label: "Intellync (AB Agri) - Senior Support Engineer", value: 6, color: "#9370db" },
@@ -9,9 +12,6 @@ const chartData = [
   { label: "RealSpeaker LTD - IT Manager and web-developer", value: 32, color: "#f0ad4e" },
   { label: "RealSpeaker Lab - IT Manager and software-developer", value: 55, color: "#d9534f" },
 ];
-
-// Lazy load the EmailSubscription component
-const EmailSubscription = lazy(() => import('./EmailSubscription'));
 
 const MainIntro = ({ isDarkMode }) => {
   return (
@@ -37,9 +37,11 @@ const MainIntro = ({ isDarkMode }) => {
         </Suspense>
       </div>
 
-      {/* Donut Chart Section */}
+      {/* Suspense for DonutChartSection */}
       <div className="lg:w-1/3 flex justify-center lg:justify-start min-w-[300px] donut-chart-wrapper">
-        <DonutChartSection chartData={chartData} />
+        <Suspense fallback={<div>Loading Donut Chart...</div>}>
+          <DonutChartSection chartData={chartData} />
+        </Suspense>
       </div>
     </section>
   );
