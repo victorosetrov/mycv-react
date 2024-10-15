@@ -1,4 +1,3 @@
-// components/EmailSubscription.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -45,11 +44,12 @@ const EmailSubscription = ({ isDarkMode }) => {
           />
           {emailError && <p className="text-red-500 mt-2">{emailError}</p>}
           <button
-            className={`bg-yellow-600 text-black rounded-md font-bold shadow-md hover:bg-yellow-700 mt-2`}
+            className="bg-yellow-700 rounded-md font-bold shadow-md hover:bg-yellow-800 mt-2"
             onClick={handleSubmit}
-            >
+            style={{ color: '#000' }}  // Forcing the text to be black
+          >
             Subscribe
-        </button>
+          </button>
 
         </>
       )}
