@@ -1,5 +1,6 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import ReactGA from 'react-ga4';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 // Lazy load the components
 const Header = lazy(() => import('./components/Header'));
@@ -7,21 +8,31 @@ const MainIntro = lazy(() => import('./components/MainIntro'));
 const Footer = lazy(() => import('./components/Footer'));
 const CookieConsent = lazy(() => import('./components/CookieConsent'));
 
-function App () {
+function App() {
   useEffect(() => {
     ReactGA.initialize('G-TCZ8FM15EP');
     ReactGA.send('pageview');
   }, []);
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Header />
-      <main>
-        <MainIntro />
-      </main>
-      <Footer />
-      <CookieConsent />
-    </Suspense>
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+        <main>
+          <Routes>
+            {/* Main Page Route */}
+            <Route path="/" element={<MainIntro />} />
+
+            {/* Add other routes here if needed */}
+
+            {/* Catch-all route for 404 - Redirect to main page */}
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </main>
+        <Footer />
+        <CookieConsent />
+      </Suspense>
+    </Router>
   );
 }
 
