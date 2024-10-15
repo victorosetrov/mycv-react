@@ -24,10 +24,10 @@ const MainIntro = ({ isDarkMode }) => {
             Hey. It's Viktor Osetrov 👋
           </h1>
           <h1 className="text-lg leading-relaxed">
-            Senior Engineer with 13 years of IT experience:
+            Senior Engineer with 13 years of IT experience
           </h1>
           <h1 className="text-md leading-relaxed">
-            RealSpeaker, Google, Zendesk, and Intellync
+            Including RealSpeaker, Google, Zendesk, and Intellync
           </h1>
         </div>
 
