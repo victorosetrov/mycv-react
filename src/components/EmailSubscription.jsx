@@ -45,11 +45,12 @@ const EmailSubscription = ({ isDarkMode }) => {
           />
           {emailError && <p className="text-red-500 mt-2">{emailError}</p>}
           <button
-            className="bg-yellow-700 text-white rounded-md font-bold shadow-md hover:bg-yellow-800 mt-2"
+            className={`rounded-md font-bold shadow-md mt-2 p-3 ${isDarkMode ? 'bg-yellow-600 text-black' : 'bg-yellow-700 text-white'} hover:bg-yellow-800`}
             onClick={handleSubmit}
-          >
+            >
             Subscribe
-          </button>
+        </button>
+
         </>
       )}
     </div>
