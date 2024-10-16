@@ -7,7 +7,8 @@ const Header = lazy(() => import('./components/Header'));
 const MainIntro = lazy(() => import('./components/MainIntro'));
 const Footer = lazy(() => import('./components/Footer'));
 const CookieConsent = lazy(() => import('./components/CookieConsent'));
-const NotFound = lazy(() => import('./components/NotFound')); // Import the new NotFound component
+const NotFound = lazy(() => import('./components/NotFound'));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy')); // Import the new PrivacyPolicy component
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,8 @@ function App() {
             {/* Main Page Route */}
             <Route path="/" element={<MainIntro />} />
 
-            {/* Add other routes here if needed */}
+            {/* Privacy Policy Route */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} /> {/* Add PrivacyPolicy route */}
 
             {/* Catch-all route for 404 */}
             <Route path="*" element={<NotFound />} />
