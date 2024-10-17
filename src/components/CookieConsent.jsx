@@ -36,7 +36,7 @@ const CookieConsent = () => {
     <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white py-4 px-6 flex justify-between items-center z-50 shadow-lg">
       <p className="text-sm leading-relaxed text-white"> {/* Ensure the text is always white */}
         By using our website, you agree to our{' '}
-        <a href="/privacy-policy" className="text-blue-300 underline">Privacy Policy</a> and{' '}
+        <a href="/privacy-policy" className="text-blue-300 underline">Privacy Policy</a> & {' '}
         <a href="/terms-of-use" className="text-blue-300 underline">Terms of Use</a>.
       </p>
       <button style={buttonStyle} onClick={acceptCookies}>
