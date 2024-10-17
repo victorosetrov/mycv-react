@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Footer Text */}
         <p className="text-white text-sm sm:text-base">
           © 2024-2025 Viktor Osetrov. All rights reserved. <br />
-          Made with Love and React ❤️
+          Made with <a href="https://www.chartjs.org/" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-gray-400">Chart.js</a> and React ❤️
         </p>
 
         {/* Privacy Policy and Terms Links with Icons */}
