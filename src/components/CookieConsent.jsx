@@ -1,21 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// CSS styles for the banner (optional)
-const bannerStyle = {
-  position: 'fixed',
-  bottom: '0',
-  left: '0',
-  width: '100%',
-  backgroundColor: '#1a1a2e', // Dark background for dark mode
-  color: '#fff',
-  padding: '15px',
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  zIndex: '999',
-  boxShadow: '0px -2px 10px rgba(0,0,0,0.3)',
-};
-
+// Unique button style for this component
 const buttonStyle = {
   backgroundColor: '#ffd700', // Gold button
   color: '#000',
@@ -24,11 +9,6 @@ const buttonStyle = {
   fontSize: '14px',
   borderRadius: '5px',
   cursor: 'pointer',
-};
-
-const linkStyle = {
-  color: '#b3c7ff', // Light blue for links in dark mode
-  textDecoration: 'underline',
 };
 
 const CookieConsent = () => {
@@ -53,11 +33,11 @@ const CookieConsent = () => {
   }
 
   return (
-    <div style={bannerStyle}>
-      <p style={{ margin: '0', fontSize: '14px' }}>
+    <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white py-4 px-6 flex justify-between items-center z-50 shadow-lg">
+      <p className="text-sm leading-relaxed text-white"> {/* Ensure the text is always white */}
         By using our website, you agree to our{' '}
-        <a href="/privacy-policy" style={linkStyle}>Policy</a> and{' '}
-        <a href="/terms-of-use" style={linkStyle}>Terms</a>.
+        <a href="/privacy-policy" className="text-blue-300 underline">Privacy Policy</a> and{' '}
+        <a href="/terms-of-use" className="text-blue-300 underline">Terms of Use</a>.
       </p>
       <button style={buttonStyle} onClick={acceptCookies}>
         Accept and close

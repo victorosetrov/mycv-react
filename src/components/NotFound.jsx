@@ -7,10 +7,10 @@ const NotFound = () => {
       <h1 className="heading-style text-yellow-400">
         Oops, you are very lucky! 🎉
       </h1>
-      <p className="text-lg leading-relaxed text-white">
+      <p className="text-lg leading-relaxed">
         It looks like you've stumbled upon a page that doesn't exist. But don't worry, luck is on your side!
       </p>
-      <p className="text-md leading-relaxed text-white">
+      <p className="text-md leading-relaxed">
         Quickly click the button below to return to the safety of the main page before the internet monsters get you!
       </p>
       <Link to="/">

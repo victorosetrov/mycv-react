@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [menuOpen, setMenuOpen] = useState(false); // For toggling the mobile menu
 
   useEffect(() => {
     // Apply dark or light mode based on the state
@@ -51,59 +51,12 @@ const Header = () => {
               </svg>
             )}
           </button>
-          <h1 className="text-lg sm:text-xl font-bold text-yellow-400 drop-shadow-md">
-            #OpenToWork
-          </h1>
+          <Link to="/" className="no-underline">
+            <h1 className="text-lg sm:text-xl font-bold text-yellow-400 drop-shadow-md">
+              #OpenToWork
+            </h1>
+          </Link>
         </div>
-
-        {/* Hamburger menu button for mobile */}
-        <button
-          className="block lg:hidden focus:outline-none w-12 h-12 bg-transparent border-none"
-          onClick={() => setMenuOpen(!menuOpen)} // Toggle the menu
-          aria-label="Toggle Menu"
-        >
-          {menuOpen ? (
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            <div className="w-6 h-6 flex flex-col justify-between">
-              <span className="block h-0.5 bg-white"></span>
-              <span className="block h-0.5 bg-white"></span>
-              <span className="block h-0.5 bg-white"></span>
-            </div>
-          )}
-        </button>
-
-        {/* Desktop Menu */}
-        <nav className="hidden lg:flex space-x-8">
-          <a href="#about" className="text-white text-lg sm:text-xl font-bold drop-shadow-md hover:underline">
-            About
-          </a>
-          <a href="#experience" className="text-white text-lg sm:text-xl font-bold drop-shadow-md hover:underline">
-            Experience
-          </a>
-          <a href="#contact" className="text-white text-lg sm:text-xl font-bold drop-shadow-md hover:underline">
-            Contact
-          </a>
-        </nav>
-
-        {/* Mobile Popup Menu */}
-        {menuOpen && (
-          <div className="fixed inset-0 bg-gradient-indigo-purple bg-opacity-90 z-50 flex flex-col justify-center items-center">
-            <nav className="flex flex-col space-y-4 text-center">
-              <a href="#about" onClick={() => setMenuOpen(false)} className="text-white text-2xl font-bold hover:underline">
-                About
-              </a>
-              <a href="#experience" onClick={() => setMenuOpen(false)} className="text-white text-2xl font-bold hover:underline">
-                Experience
-              </a>
-              <a href="#contact" onClick={() => setMenuOpen(false)} className="text-white text-2xl font-bold hover:underline">
-                Contact
-              </a>
-            </nav>
-          </div>
-        )}
       </div>
     </header>
   );
