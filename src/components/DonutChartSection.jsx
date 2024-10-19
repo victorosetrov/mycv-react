@@ -32,6 +32,11 @@ const DonutChartSection = ({ chartData }) => {
       legend: {
         display: true, // Display legend to show category names
         position: 'bottom',
+        align: 'start', // Align the legend items to the left
+        labels: {
+          boxWidth: 20, // Adjust size of the legend color box
+          padding: 20, // Padding between the text and the box
+        },
       },
       tooltip: {
         enabled: false, // Disable default tooltip
