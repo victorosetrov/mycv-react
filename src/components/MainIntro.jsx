@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'; 
+import React, { lazy, Suspense } from 'react';
 
 const DonutChartSection = lazy(() => import('./DonutChartSection'));
 const EmailSubscription = lazy(() => import('./EmailSubscription'));
@@ -15,7 +15,7 @@ const chartData = [
 const MainIntro = ({ isDarkMode }) => {
   return (
     <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-8 px-6 pt-4 pb-8 lg:py-10 min-h-screen">
-      {/* Left Side */}
+      {/* Left Side - Intro Section */}
       <div className="flex flex-col gap-6 lg:gap-14 lg:w-1/2 min-w-[300px]">
         <div className="flex flex-col gap-4 items-center text-center lg:text-left lg:items-start">
           <h1 className="heading-style">
