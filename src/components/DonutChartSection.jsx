@@ -7,7 +7,7 @@ import {
   Legend,
 } from 'chart.js';
 
-// Register Chart.js components
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const DonutChartSection = ({ chartData }) => {
@@ -30,10 +30,10 @@ const DonutChartSection = ({ chartData }) => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false, // Remove the legend (categories)
+        display: false,
       },
       tooltip: {
-        enabled: false, // Disable default tooltip
+        enabled: false,
       },
     },
     onHover: (event, chartElement) => {
@@ -51,7 +51,7 @@ const DonutChartSection = ({ chartData }) => {
   return (
     <section className="donut-chart-section">
       <div className="donut-chart-wrapper">
-        <div className="donut-chart" style={{ width: '450px', height: '450px' }}>
+        <div className="donut-chart">
           <Doughnut ref={chartRef} data={data} options={options} />
         </div>
         {hoveredLabel && (
@@ -61,8 +61,7 @@ const DonutChartSection = ({ chartData }) => {
               maxWidth: '300px',
               whiteSpace: 'normal',
               wordWrap: 'break-word',
-              color: '#000',
-              textAlign: 'center',
+              color: '#000', // Set text color explicitly
             }}
           >
             {hoveredLabel}
