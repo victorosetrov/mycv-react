@@ -31,11 +31,14 @@ const DonutChartSection = ({ chartData }) => {
     plugins: {
       legend: {
         display: true, // Display legend to show category names
-        position: 'bottom',
-        align: 'start', // Align the legend items to the left
+        position: 'top', // Move the legend to the top
+        align: 'center', // Align the legend in the center
         labels: {
-          boxWidth: 20, // Adjust size of the legend color box
-          padding: 20, // Padding between the text and the box
+          boxWidth: 12, // Smaller box for a compact look
+          padding: 10, // Less padding to make it compact
+          font: {
+            size: 12, // Smaller font size for compactness
+          },
         },
       },
       tooltip: {
