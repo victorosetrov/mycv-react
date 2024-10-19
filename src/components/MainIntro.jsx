@@ -6,7 +6,7 @@ const EmailSubscription = lazy(() => import('./EmailSubscription'));
 const chartData = [
   { label: "Intellync (AB Agri) - Senior Support Engineer", value: 7, color: "#9370db" },
   { label: "Zendesk - Technical Support Engineer", value: 31, color: "#f76c6c" },
-  { label: "Accenture - Technical Support Analyst", value: 20, color: "#1bc98e" },
+  { label: "Google - Technical Support Analyst", value: 20, color: "#1bc98e" },
   { label: "Hewlett Packard - IT Roll-up/out Engineer", value: 2, color: "#5bc0de" },
   { label: "RealSpeaker LTD - IT Manager and web-developer", value: 32, color: "#f0ad4e" },
   { label: "RealSpeaker Lab - IT Manager and software-developer", value: 55, color: "#d9534f" },

@@ -30,16 +30,7 @@ const DonutChartSection = ({ chartData }) => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: true, // Display legend to show category names
-        position: 'top', // Move the legend to the top
-        align: 'center', // Align the legend in the center
-        labels: {
-          boxWidth: 12, // Smaller box for a compact look
-          padding: 10, // Less padding to make it compact
-          font: {
-            size: 12, // Smaller font size for compactness
-          },
-        },
+        display: false, // Remove the legend (categories)
       },
       tooltip: {
         enabled: false, // Disable default tooltip
