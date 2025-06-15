@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Footer Text */}
         <p className="text-[#B3C7FF] text-sm sm:text-base">
-          © 2024-2025 Viktor Osetrov. All rights reserved.
+          © 2025 Viktor Osetrov. All rights reserved.
         </p>
         <p className="text-[#B3C7FF] text-sm sm:text-base">
           Made with <a href="https://www.chartjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#B3C7FF] underline hover:text-gray-400">
