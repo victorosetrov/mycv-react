@@ -4,7 +4,7 @@ const DonutChartSection = lazy(() => import('./DonutChartSection'));
 const EmailSubscription = lazy(() => import('./EmailSubscription'));
 
 const chartData = [
-  { label: "dbt Labs - Client Solution Engineer", value: 1, color: "#2f4f4f" },
+  { label: "dbt Labs - Customer Solution Engineer", value: 1, color: "#2f4f4f" },
   { label: "Intellync (AB Agri) - Senior Support Engineer", value: 19, color: "#9370db" },
   { label: "Zendesk - Technical Support Engineer", value: 31, color: "#f76c6c" },
   { label: "Google - Technical Support Analyst", value: 20, color: "#1bc98e" },
