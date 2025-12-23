@@ -4,6 +4,7 @@ const DonutChartSection = lazy(() => import('./DonutChartSection'));
 const EmailSubscription = lazy(() => import('./EmailSubscription'));
 
 const chartData = [
+  { label: "dbt Labs - Client Solution Engineer", value: 1, color: "#2f4f4f" },
   { label: "Intellync (AB Agri) - Senior Support Engineer", value: 19, color: "#9370db" },
   { label: "Zendesk - Technical Support Engineer", value: 31, color: "#f76c6c" },
   { label: "Google - Technical Support Analyst", value: 20, color: "#1bc98e" },
@@ -22,10 +23,10 @@ const MainIntro = ({ isDarkMode }) => {
             Hey. It's Viktor Osetrov 👋
           </h1>
           <h1 className="text-lg leading-relaxed">
-            Senior Engineer with 13 years of IT experience
+            Senior Engineer with 14 years of IT experience
           </h1>
           <h1 className="text-md leading-relaxed">
-            Including RealSpeaker, Google, Zendesk, and Intellync
+            Including RealSpeaker, Google, Zendesk, Intellync and dbt labs
           </h1>
         </div>
         <Suspense fallback={<div>Loading Email Subscription...</div>}>
