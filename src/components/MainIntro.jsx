@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 
 const DonutChartSection = lazy(() => import('./DonutChartSection'));
-const EmailSubscription = lazy(() => import('./EmailSubscription'));
 
 const chartData = [
   { label: "dbt labs - Customer Solutions Engineer", value: 2, color: "#2f4f4f" },
@@ -29,9 +28,6 @@ const MainIntro = ({ isDarkMode }) => {
             Including RealSpeaker, Google, Zendesk, Intellync and dbt labs
           </h1>
         </div>
-        <Suspense fallback={<div>Loading Email Subscription...</div>}>
-          <EmailSubscription isDarkMode={isDarkMode} />
-        </Suspense>
       </div>
 
       {/* DonutChart Section */}
