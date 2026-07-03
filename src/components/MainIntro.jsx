@@ -14,40 +14,45 @@ const chartData = [
 
 const MainIntro = ({ isDarkMode }) => {
   return (
-    <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-8 px-6 pt-4 pb-8 lg:py-10 min-h-screen">
-      {/* Left Side - Intro Section */}
-      <div className="flex flex-col gap-6 lg:gap-14 lg:w-1/2 min-w-[300px]">
-        <div className="flex flex-col gap-4 items-center text-center lg:text-left lg:items-start">
-          <h1 className="heading-style">
-            Hey. It's Viktor Osetrov 👋
-          </h1>
-          <h1 className="text-lg leading-relaxed">
-            Senior Engineer with 14 years of IT experience
-          </h1>
-          <h1 className="text-md leading-relaxed">
-            Including RealSpeaker, Google, Zendesk, Intellync and dbt labs
-          </h1>
-
-          {/* Live data board from MonChart */}
-          <iframe
-            src="https://monchart.com/embed/board/39f2dc6d-d37c-4954-aa75-7745d91565ec"
-            title="Viktor Osetrov — live data board"
-            height="500"
-            loading="lazy"
-            allowFullScreen
-            className="w-full max-w-[800px] rounded-lg border border-gray-200 dark:border-gray-700 mt-2"
-            style={{ border: 0 }}
-          />
+    <>
+      {/* Jumbotron — intro text + donut chart */}
+      <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-8 px-6 pt-4 pb-8 lg:py-10">
+        {/* Left Side - Intro Section */}
+        <div className="flex flex-col gap-6 lg:gap-14 lg:w-1/2 min-w-[300px]">
+          <div className="flex flex-col gap-4 items-center text-center lg:text-left lg:items-start">
+            <h1 className="heading-style">
+              Hey. It's Viktor Osetrov 👋
+            </h1>
+            <h1 className="text-lg leading-relaxed">
+              Senior Engineer with 14 years of IT experience
+            </h1>
+            <h1 className="text-md leading-relaxed">
+              Including RealSpeaker, Google, Zendesk, Intellync and dbt labs
+            </h1>
+          </div>
         </div>
-      </div>
 
-      {/* DonutChart Section */}
-      <div className="lg:w-1/3 flex justify-center lg:justify-start min-w-[300px] donut-chart-wrapper">
-        <Suspense fallback={<div>Loading Donut Chart...</div>}>
-          <DonutChartSection chartData={chartData} />
-        </Suspense>
-      </div>
-    </section>
+        {/* DonutChart Section */}
+        <div className="lg:w-1/3 flex justify-center lg:justify-start min-w-[300px] donut-chart-wrapper">
+          <Suspense fallback={<div>Loading Donut Chart...</div>}>
+            <DonutChartSection chartData={chartData} />
+          </Suspense>
+        </div>
+      </section>
+
+      {/* Live data board from MonChart — full width, below the jumbotron */}
+      <section className="max-w-7xl mx-auto px-6 pb-12">
+        <iframe
+          src="https://monchart.com/embed/board/39f2dc6d-d37c-4954-aa75-7745d91565ec"
+          title="Viktor Osetrov — live data board"
+          height="600"
+          loading="lazy"
+          allowFullScreen
+          className="w-full rounded-lg border border-gray-200 dark:border-gray-700"
+          style={{ border: 0 }}
+        />
+      </section>
+    </>
   );
 };
 
