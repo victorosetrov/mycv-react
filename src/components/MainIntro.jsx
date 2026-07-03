@@ -27,6 +27,17 @@ const MainIntro = ({ isDarkMode }) => {
           <h1 className="text-md leading-relaxed">
             Including RealSpeaker, Google, Zendesk, Intellync and dbt labs
           </h1>
+
+          {/* Live data board from MonChart */}
+          <iframe
+            src="https://monchart.com/embed/board/39f2dc6d-d37c-4954-aa75-7745d91565ec"
+            title="Viktor Osetrov — live data board"
+            height="500"
+            loading="lazy"
+            allowFullScreen
+            className="w-full max-w-[800px] rounded-lg border border-gray-200 dark:border-gray-700 mt-2"
+            style={{ border: 0 }}
+          />
         </div>
       </div>
 
