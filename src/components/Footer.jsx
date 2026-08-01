@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="https://x.com/ViktorOsetrov" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" className="text-[#B3C7FF]">
             <FontAwesomeIcon icon={faXTwitter} className="w-6 h-6 hover:scale-110 transform transition-transform" />
           </a>
-          <a href="https://www.youtube.com/@RealSpeakerTV" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-[#B3C7FF]">
+          <a href="https://www.youtube.com/@monchartTV" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-[#B3C7FF]">
             <FontAwesomeIcon icon={faSquareYoutube} className="w-6 h-6 hover:scale-110 transform transition-transform" />
           </a>
           <a href="https://www.linkedin.com/in/realspeaker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-[#B3C7FF]">
@@ -25,7 +25,7 @@ const Footer = () => {
 
         {/* Footer Text */}
         <p className="text-[#B3C7FF] text-sm sm:text-base">
-          © 2025 Viktor Osetrov. All rights reserved.
+          © 2026 Viktor Osetrov. All rights reserved.
         </p>
         <p className="text-[#B3C7FF] text-sm sm:text-base">
           Made with <a href="https://www.chartjs.org/" target="_blank" rel="noopener noreferrer" className="text-[#B3C7FF] underline hover:text-gray-400">
