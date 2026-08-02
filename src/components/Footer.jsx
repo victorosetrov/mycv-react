@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/viktorosetrov/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[#B3C7FF]">
             <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 hover:scale-110 transform transition-transform" />
           </a>
-          <a href="https://github.com/victorosetrov/mycv-react" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-[#B3C7FF]">
+          <a href="https://github.com/victorosetrov/mycv-react/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-[#B3C7FF]">
             <FontAwesomeIcon icon={fagithub} className="w-6 h-6 hover:scale-110 transform transition-transform" />
           </a>
         </div>
