@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXTwitter, faSquareYoutube, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faSquareYoutube, faLinkedinIn, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 hover:scale-110 transform transition-transform" />
           </a>
           <a href="https://github.com/victorosetrov/mycv-react/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-[#B3C7FF]">
-            <FontAwesomeIcon icon={fagithub} className="w-6 h-6 hover:scale-110 transform transition-transform" />
+            <FontAwesomeIcon icon={faGithub} className="w-6 h-6 hover:scale-110 transform transition-transform" />
           </a>
         </div>
 
