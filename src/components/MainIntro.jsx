@@ -43,7 +43,7 @@ const MainIntro = ({ isDarkMode }) => {
       {/* Live data board from MonChart — full width, below the jumbotron */}
       <section className="max-w-7xl mx-auto px-6 pb-12">
         <iframe
-          src="https://monchart.com/embed/board/39f2dc6d-d37c-4954-aa75-7745d91565ec"
+          src="https://monchart.com/embed/board/14c25aad-60d9-4dbe-ad10-ac38f9a0e927"
           title="Viktor Osetrov — live data board"
           height="600"
           loading="lazy"
